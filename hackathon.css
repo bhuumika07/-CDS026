@@ -1,161 +1,689 @@
-*
-{
+* {
     padding: 0px;
     margin: 0px;
-    
-   
+
+
+
 }
-.navbar1
-{
+
+.navbar1 {
     height: 70px;
     width: 100%;
-    background-color:#021012;
+    background-color: #021012;
 }
-.navbar1 img
-{
+
+.navbar1 img {
     float: left;
     margin: 5px 0px 5px 10px;
     height: 60px;
-    width: auto; 
+    width: auto;
     border-radius: 9px;
 }
- /* .navbar1 img:hover
-{
-    height: 50px;
-} */
-.navbar1 button{
+
+
+.navbar1 button {
     margin: 7px 0px 0px 13px;
+    background-color: rgb(240, 194, 64);
+    ;
 }
-.navbar1 ul li a
-{
+
+.navbar1 ul li a {
     text-decoration: none;
-    color: rgb(21, 3, 3);
+    color: black;
     float: left;
     padding: 15px 18px 2px 90px;
-    font-family:fantasy;
+    font-family: fantasy;
     font-size: 20px;
+
+
 }
-.navbar1 ul li a:hover
-{
+
+.navbar1 ul li a:hover {
     /* background-color: #F7E1D7; */
-    color:white;
-    background-color:black ;
+    color: white;
+    background-color: black;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
 }
-.navbar1 button
-{
+
+.navbar1 button {
     /* background-color: rgb(251, 214, 235); */
     float: left;
     padding: 2px 18px 10px 8px;
     border-radius: 5px;
-   
-}
-.helpline
-{
-   animation-name: help1; 
-   animation-duration: 2s;
-   animation-direction: forward;
-   animation-iteration-count: infinite;
-   position: relative;
-   font-family: fantasy;
-   float: right;
-   font-size: 20px;
-   margin: 25px 50px 0px 0px;
-   color: white;
 
 }
-@keyframes help1{
-    from{left:0px}
-    to{left: 50px;}
+
+.helpline {
+    animation-name: help1;
+    animation-duration: 2s;
+    animation-direction: forward;
+    animation-iteration-count: infinite;
+    position: relative;
+    font-family: fantasy;
+    float: right;
+    font-size: 20px;
+    margin: 25px 50px 0px 0px;
+    color: rgb(236, 191, 66);
+
 }
-.frontpage
-{
+
+@keyframes help1 {
+    from {
+        left: 0px
+    }
+
+    to {
+        left: 50px;
+    }
+}
+
+.frontpage {
     height: 500px;
-    width:100%;
+    width: 100%;
     /* background-color: aqua;  */
-    margin:20px 0px 0px 0px;
-    background-image: url(blurr.jpg) ;
-    
+    margin: 0px 0px 0px 0px;
+    background-image: url(blackback.jpg);
+
 }
 
 
-.frontpage_image1
-{
+.frontpage_image1 {
     float: right;
     padding: 30px 0px 0px 0px;
-    height:500px;
-    width: 300px ;
+    height: 500px;
+    width: 300px;
     border: 1px;
     border-radius: 20px;
-    
-   
+    transition: transform 0.3s ease-in-out;
+
 }
-.frontpage_image2
-{
+
+.frontpage_image1:hover {
+    transform: scale(1.1);
+    border-radius: 5%;
+}
+
+.frontpage_image2 {
     float: right;
     padding: 30px 0px 0px 0px;
     margin-right: 40px;
-    height:500px;
-    width: 300px ;
+    height: 500px;
+    width: 300px;
     border: 1px;
     border-radius: 20px;
-   
+    transition: transform 0.3s ease-in-out;
 }
 
-.quote
-{
+.frontpage_image2:hover {
+    transform: scale(1.1);
+    border-radius: 5%;
+}
+
+.quote {
     margin: 70px 0px 20px 0px;
     /* background-color: black; */
     float: left;
     height: 300px;
     width: 300px;
-    /* color: white; */
-    font-size:50px;
-    font-family:sans-serif ;
+    color: yellow;
+    font-size: 50px;
+    font-family: sans-serif;
     color: white;
 }
-.secondpage
-{
-    height: 400px;
+
+.secondpage {
+    height: 500px;
     width: 100%;
-    margin: 45px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+
+    /* background-image: url(main.jpg);height: fit-content; */
+
 }
-.secondpage_secondhalf
-{
-    height: 350px;
+
+.secondpage_secondhalf {
+    height: 100%;
     width: 450px;
-    /* background-color:rgb(196, 132, 224); */
-    float: right;
-    border: 2px solid #291F1E;
-    box-shadow: 0px 0px 20px 20px;
-    margin-right: 20px;
-    background-image: url(second.jpg);
-}  
-.secondpage_secondhalf:hover
-{
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    box-shadow: 0px 0px 20px 20px;
-   
+    float: left;
+
+    /* background-image: url(budding.jpg); */
+    transition: transform 0.3s ease-in-out;
+    margin-top: 30px;
+    margin-left: 15px;
+
 }
-.secondpage_secondhalf p
-{
+
+/* .secondpage_secondhalf:hover {
+    
+    transform: scale(1.1);
+
+} */
+
+.secondpage_secondhalf p {
     font-size: 38px;
-    font-family:unset;
+    font-family: unset;
     text-align: center;
-    color:#370926;
-    padding: 20px 2px 5px 2px;
+    color: white;
+    padding: 40px 2px 5px 2px;
+    animation-name: anim2;
+    animation-duration: 2s;
+    position: relative;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+
+
+}
+
+@keyframes anim2 {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 50px;
+    }
+}
+
+.secondpage_firsthalf {
+    height: 180px;
+    width: 370px;
+    border: solid black 0px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 150px;
+    animation-duration: 4s;
+    animation-name: second1;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+.secondpage_firsthalf p {
+    font-size: 40px;
+    font-family: fantasy;
+    text-shadow: #ecdd33;
+}
+
+@keyframes second1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 150px;
+        top: 0px;
+    }
+
+    50% {
+        left: 150px;
+        top: 200px;
+    }
+
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+.secondpage_firsthalf:hover {
+    transform: scale(1.1);
+    color: black;
+    box-shadow: 0px 0px 30px 0px;
+}
+
+.section_one {
+    background-color: blanchedalmond;
+    color: black
+}
+
+.thirdpage {
+    width: 95%;
+    height: 400px;
+    border: solid black 2px;
+    background-color: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 27px;
+    margin-top: 50px;
+    color: black;
+
+}
+
+.thirdpage h1 {
+    font-size: 60px;
+    font-family: cursive;
+    animation-name: third1;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes third1 {
+    to {
+        top: 0px;
+        color: black;
+    }
+
+    from {
+        top: 50px;
+        color: white;
+    }
+}
+
+.thirdpage p {
+    font-family: fantasy;
+    font-size: 25px;
+    padding: 20px;
+    line-height: 82px;
+    transition: transfrom 0.3s ease-in-out;
+    border-radius: 5%;
+
+}
+
+.thirdpage:hover {
+    transform: scale(1.1);
+
+}
+
+.objectives {
+    height: 800px;
+    width: 100%;
+    border: solid black;
+    margin-top: 40px;
+    margin-left: 25px;
+    border-radius: 6%;
+    background-color: rgb(245, 193, 51);
+
+}
+
+.heading1 {
+    width: 70%;
+    text-align: center;
+    text-decoration: underline;
+    height: 80px;
+    animation-name: anim3;
+    position: relative;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-duration: 4s;
+    animation-iteration-count: .25;
+    animation-direction: forwards;
+    border-radius: 5%;
+    animation-fill-mode: forwards;
+    margin-top: 10px;
+
+}
+
+@keyframes anim3 {
+    from {
+        right: 300px;
+        top: 0px;
+        color: black;
+    }
+
+    to {
+        right: -800px;
+        top: 0px;
+        color: none;
+    }
+
+}
+
+.content {
+    margin-left: 20px;
+    height: 120px;
+    width: 70%;
+    margin-top: 70px;
+    align-content: center;
+}
+
+.outdoor {
+    background-color: white;
+    padding-top: 30px;
+
+}
+
+
+.indoor {
+
+    background-color: white;
+    padding-top: 30px;
+}
+
+.mental {
+    background-color: white;
+    padding-top: 30px;
+}
+
+.outdoor img {
+    margin-left: 10px;
+}
+
+.indoor img {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.mental img {
+    margin-top: 30px;
+    margin-left: 15px;
+    padding-left: 12px;
+}
+
+.outdoor {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5%;
+    width: 100%;
+    background-color: black;
+    color:white;
    
+
+}
+
+.outdoor:hover {
+    transform: scale(1.1);
+    /* background-color: black; */
+    color: black;
+    background-image: url(outdooeuse.jpg);
+    background-size: cover;
+}
+
+.indoor {
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+    border-radius: 5%;
+    background-color: black;
+    color:white;
+}
+
+.indoor:hover {
+    transform: scale(1.1);
+    /* background-color: black; */
+    color: black;
+    background-image: url(indooruse.jpg);
+    background-size: cover;
+}
+
+.mental {
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+    border-radius: 5%;
+    background-color: black;
+    color:white;
+
+}
+
+.mental:hover {
+    transform: scale(1.1);
+    /* background-color: black; */
+    color: black;
+    opacity: 1.0;
+    background-image: url(mentaluse.jpg);
+    background-size: cover;
+}
+
+/* .content_right {
+
+    float: right;
+    background-color: #021012;
+    height: 50px;
+    width: 200px;
+    transition: background-image 0.5s ease-in-out;
+    background-size: cover;
+
+} */
+
+/* .content_right:hover {
+    background-image: url(babyhappy.jpg);
+} */
+
+.content img {
+    animation-name: anim3;
+    position: relative;
+    font-size: 55px;
+    animation-name: content1;
+    animation-duration: 4s;
+    animation-iteration-count: .25;
+    animation-direction: forwards;
+    border-radius: 5%;
+    animation-fill-mode: forwards;
+    transition: opacity 300ms linear;
+}
+
+@keyframes content1 {
+    from {
+        left: -1px;
+        top: 0px;
+        color: black;
+    }
+
+    to {
+        left: 1700px;
+        top: 0px;
+        color: none;
+    }
+}
+.things
+{
+    height: 900px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #ecdd33;
+    background-image: url(breakit.jpg);
+}
+.things h1
+{
+    font-size: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.image_change
+{
+width: 300px;
+height: 220px;
+background-image: url(newindoorwater.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin:0px 50px 0px 0px;
+
+}
+.image_change:hover
+{
+    background-image: url(danger.jpg);
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+}
+.image_change1
+{
+width: 300px;
+height: 220px;
+background-image: url(kitechensafe.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+
+}
+.image_change1:hover
+{
+    background-image: url(trophy.jpg);
+    background-size: cover;
     
 }
+.image_change2
+{
+width: 300px;
+height: 220px;
+background-image: url(fansafety.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
 
-  .secondpage_firsthalf
-  {
-    height: 250px;
-    width: 570px;
+
+}
+.image_change2:hover
+{
+    background-image: url(danger.jpg);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+}
+@keyframes shake{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.image_change3
+{
+width: 300px;
+height: 220px;
+background-image: url(newindoorplug.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+}
+.image_change3:hover
+{
+    background-image: url(danger.jpg);
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+}
+.image_change4
+{
+width: 300px;
+height: 220px;
+background-image: url(scissor.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+}
+.image_change4:hover
+{
+    background-image: url(danger.jpg);
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+}
+.line1
+{
+height: 270px;
+width: 100%;
+color: black;
+margin: 20px 0px 0px 0px;
+}
+.image_change5
+{
+width: 300px;
+height: 220px;
+background-image: url(bake.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+
+}
+.image_change5:hover
+{
+    background-image: url(trophy.jpg);
+    
+}
+.line2
+{
+height: 270px;
+width: 100%;
+color: black;
+margin: 20px 0px 0px 33px;
+}
+.image_change6
+{
+width: 300px;
+height: 220px;
+background-image: url(happyfamily.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+}
+.image_change6:hover
+{
+    background-image: url(trophy.jpg);
+    
+}
+.image_change7
+{
+width: 300px;
+height: 220px;
+background-image: url(iron.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+}
+.image_change7:hover
+{
+    background-image: url(danger.jpg);
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    
+}
+.image_change8
+{
+width: 300px;
+height: 220px;
+background-image: url(roadsafetyball.jpg);
+background-size: cover;
+transition: background-image 0.5 ease-in-out;
+float: right;
+margin: 0px 90px 0px 0px;
+
+}
+.image_change8:hover
+{
+    background-image: url(danger.jpg);
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+}
+.line3
+{
+height: 270px;
+width: 100%;
+color: black;
+margin: 20px 0px 0px 30px;
+}
+.abuse
+{
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
     margin: 20px 0px 0px 0px;
-    background-color: brown;
-    float: left;
-  }
-
-
+}

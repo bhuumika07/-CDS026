@@ -10,36 +10,27 @@
     .quote {
       width: 300px;
       height: 300px;
-
+      color: rgb(240, 194, 64);
       position: relative;
       animation-name: example;
-      animation-duration: 4s;
-      animation-iteration-count: .25;
+      animation-duration: 5s;
       animation-direction: forwards;
       border-radius: 5%;
       animation-fill-mode: forwards;
     }
 
     @keyframes example {
-      0% {
-        left: 0px;
+      to {
+        right: -80px;
         top: 0px;
+        color: rgb(234, 176, 18);
       }
 
-      45% {
-        left: 80px;
+      from {
+        right: 0px;
         top: 0px;
+        color: black;
       }
-
-    }
-
-    .frontpage_images {
-      width: 1;
-      height: 1;
-      position: relative;
-      animation-duration: 2s;
-      animation-iteration-count: 1;
-
 
     }
   </style>
@@ -47,45 +38,107 @@
 </head>
 
 <body>
-  <div class="navbar1 " style="background-image: url(cartoon.jpg.jpg);">
+  <div class="navbar1 " style="background-image: url(blackback.jpg);">
     <img src="logo.jpg">
     <ul type="none">
-      <li><button> <a href="#section1">HOME</a></button></li>
-      <li><button> <a href="#section2">ABOUT</a></button></li>
+      <li><button> <a href="#section1" target="_blank">HOME</a></button></li>
+      <li><button> <a href="#section2" target="_self">ABOUT</a></button></li>
       <li><button> <a href="#section3">CONTACT</a></button></li>
     </ul>
     <div class="helpline">Child Helpline:1098</div>
 
   </div>
-  <div class="frontpage">
-    <div class="frontpage_image1">
-      <img src="baby1.jpg" height="400px" width="300px">
-    </div>
-    <div class="frontpage_image2">
-      <img src="babies.jpg" height="400px" width="300px">
-    </div>
-    <div class="quote">
-      <p>Your Child will follow Your Example, not
-        Your advice.</p>
+  <div class="section_one" id="section1">
+    <div class="frontpage">
+      <div class="frontpage_image1">
+        <img src="updateimg2.jpg" height="400px" width="300px">
+      </div>
+      <div class="frontpage_image2">
+        <img src="updateimg1.jpg" height="400px" width="300px">
+      </div>
+      <div class="quote">
+        <p>Your Child will follow Your Example, not
+          Your advice.</p>
+      </div>
     </div>
   </div>
-
-  <hr style="height: 10px; width: 100%;" color="black" margin="10px">
+  <hr style="height: 10px; width: 100%;" color="black" margin-bottom="10px">
   <!-- second webpage start -->
-  <div class="secondpage">
-    <div class="secondpage_secondhalf">
-      <p>Safety is the most basic task of all.
-        Without sense of safety no growth can take place.
-        Without safety all engery goes to defense.
+  <div class="secondpage" style="background-image:url(secondback.jpg);">
+    
+    <div class="secondpage_firsthalf">
+      <p>
+        BUDDING
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BRAINS
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLAYSCHOOL
       </p>
     </div>
-    <div class="secondpage_firsthalf"></div>
+    <div class="secondpage_firsthalf">
+      <p>
+        BUDDING
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BRAINS
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLAYSCHOOL
+      </p>
+    </div>
   </div>
 
+  <div id="section2">
+    <div class="thirdpage" style="background-image: url(what.jpg); height: auto; width:auto ;">
+      <h1>What are we?</h1>
+      <p>An Organization created especially for the welfare of
+        Children. We not only teach them basic physical safety measures
+        but also help them to mentally navigate their emotions as mental safety
+        is also crucial in today's digital world.
+      </p>
+
+    </div>
 
 
+    <!-- objectives -->
 
-
+    <div class="objectives" style="background-image: url(objectives.jpg);">
+      <div class="heading1">
+        <h1>Our Objectives</h1>
+      </div>
+      <div class="content">
+        <ul>
+          <div class="outdoor">
+            <img src="outdoorsafety.jpg" style="height: 130px; width: 100px;">
+            <p style="font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">OUTDOOR
+              SAFETY TEACHINQUES THROUGH VISUAL MODE</p>
+          </div>
+          <div class="indoor"><img src="indoorlogo.jpg" style="height: 100px; width: auto;">
+            <p style="font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">INDOOR
+              SAFETY TEACHINQUES THROUGH VISUAL MODE</p>
+          </div>
+          <div class="mental"><img src="mentalhealth.jpg" style="height: 100px; width: auto;">
+            <p style="font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">MENTAL
+              SAFETY TEACHINQUES THROUGH VISUAL MODE</p>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 5th webpage -->
+<div class="things"><h1>DO'& and DON't&</h1>
+  <div class="line1">
+<div class="image_change"></div>
+<div class="image_change1"></div>
+<div class="image_change2"></div>
+</div>
+ <div class="line2">
+<div class="image_change3"></div>
+<div class="image_change4"></div>
+<div class="image_change5"></div>
+</div>
+<div class="line3">
+<div class="image_change6"></div>
+<div class="image_change7"></div>
+<div class="image_change8"></div>
+</div>
+  
+</div>
+<div class="abuse"></div>
 </body>
 
 </html>
